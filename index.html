@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Meu Currículo</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <main class="container">
+         <div id="language-selector">
+            <span class="language-label lang" lang="pt">Idiomas:</span> <span class="language-label lang" lang="en">Languages:</span> <a href="#" id="language-toggle" onclick="changeLanguage('pt')">
+            <img src="bandeira-do-brasil.png" alt="Português" class="icon">
+            </a>
+            <a href="#" id="language-toggle" onclick="changeLanguage('en')">
+            <img src="bandeira-do-eua.png" alt="Inglês" class="icon">
+            </a>
+         </div>
+         <div class="row">
+            <div class="col-md-4 text-center">
+               <img class="profile-img mb-4" src="perfil.jpg" alt="Foto de Perfil">
+               <div class="contact-info">
+                  <div class="d-flex align-items-center mb-3">
+                     <svg class="bi bi-envelope icon" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M.5 2A1.5 1.5 0 0 1 2 .5h12A1.5 1.5 0 0 1 15.5 2v12a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 .5 14V2zM2 1.5A.5.5 0 0 0 1.5 1h12a.5.5 0 0 0 .5.5V14a.5.5 0 0 0-.5.5h-12a.5.5 0 0 0-.5-.5z"/>
+                        <path fill-rule="evenodd" d="M14.146 2.146l-6 6a.5.5 0 0 1-.708 0l-6-6A.5.5 0 0 1 2.5 1h11a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.354-.854l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708z"/>
+                     </svg>
+                     <span>jaderson.morais@gmail.com</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                     <svg class="bi bi-phone icon" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.5 2A1.5 1.5 0 0 1 4 .5h8a1.5 1.5 0 0 1 1.5 1.5v11a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 2.5 13V2zm1 .5a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5h-8z"/>
+                        <path fill-rule="evenodd" d="M11.5 1h-7a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5zm-.5 13h-6V2h6v12z"/>
+                        <path d="M3 5h4v2H3zm0 4h4v2H3z"/>
+                     </svg>
+                     <span>(+351) 911 566 336</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                     <svg class="bi bi-geo-alt icon" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.342L1.211 4.868A.5.5 0 0 0 1 5.285V14.5a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5V5.285a.5.5 0 0 0-.211-.417L8 1.342zM2.414 5L8 2.316 13.586 5H2.414zm0 1L8 3.684 13.586 6H2.414zM1 6.258l6 2.571v7.871L1 14.608V6.258zm7 2.571L15 8.258V14.608l-7-2.571V8.829zM2 14.608l6-2.571V8.829L2 11.4v3.208zm9-2.571L3 8.258V11.4l6 2.571v-3.208z"/>
+                     </svg>
+                     <span>R. Aquilino Ribeiro N5 - Almada</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                     <svg class="bi bi-github icon" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 .798a8 8 0 0 0-2.535 15.602c.4.074.548-.174.548-.387 0-.19-.007-.693-.01-1.36-2.23.484-2.695-1.073-2.695-1.073-.364-.925-.887-1.17-.887-1.17-.724-.494.055-.484.055-.484.8.056 1.222.82 1.222.82.713 1.22 1.872.867 2.328.663.072-.517.28-.868.508-1.067-1.777-.202-3.644-.888-3.644-3.943 0-.872.31-1.586.82-2.144-.082-.203-.355-1.018.077-2.12 0 0 .672-.215 2.2.82.638-.178 1.317-.267 1.994-.27.678.003 1.357.092 1.994.27 1.527-1.035 2.197-.82 2.197-.82.433 1.102.16 1.917.08 2.12.51.558.82 1.272.82 2.144 0 3.066-1.87 3.74-3.652 3.936.288.246.546.73.546 1.474 0 1.065-.01 1.924-.01 2.187 0 .214.145.463.55.386A8.001 8.001 0 0 0 8 .798z"/>
+                     </svg>
+                     <a href="https://github.com/jadersonmb" target="_blank">https://github.com/jadersonmb</a>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                     <svg class="bi bi-linkedin icon" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 0C1.348 0 0 1.348 0 3s1.348 3 3 3h.5V3.75H3C2.676 3.75 2.4 4.026 2.4 4.35v6.3c0 .324.276.6.6.6h1.2c.324 0 .6-.276.6-.6V7.5H6V10.5c0 .324.276.6.6.6h1.2c.324 0 .6-.276.6-.6V4.35c0-.324-.276-.6-.6-.6H7.5V6h.5c1.652 0 3-1.348 3-3s-1.348-3-3-3zm0 1.2c.9 0 1.8.9 1.8 1.8s-.9 1.8-1.8 1.8S1.2 3.9 1.2 3 2.1 1.2 3 1.2zm0 9h-.1c-1.8 0-2.7-1.2-2.7-2.4V6.9h-.6c-.3 0-.6.3-.6.6v3.6c0 .3.3.6.6.6h.6V9.9c0-.9.6-1.5 1.5-1.5s1.5.6 1.5 1.5v3.6h.6c.3 0 .6-.3.6-.6V10.8c0-1.2-.9-2.4-2.7-2.4zM12.9 6h-.5v.6h-.1c-.3-.5-1.1-1.1-2.3-1.1-2 0-2.4 1.5-2.4 3.4V10.8c0 1.9.5 3.4 2.4 3.4 1.1 0 1.9-.6 2.3-1.1h.1V14h.5v-7.2zm-1.1 5.1c-.9 0-1.2-.6-1.2-1.2v-.1c0-.7.4-1.1 1.1-1.1.7 0 1.2.4 1.2 1.1v.1c0 .7-.5 1.2-1.1 1.2z"/>
+                     </svg>
+                     <a href="https://www.linkedin.com/in/jadersonmorais/" target="_blank">https://linkedin/jadersonmorais</a>
+                  </div>
+               </div>
+               <div class="skills">
+                  <br />
+                  <h5>Skills</h5>
+                  <ul class="list-unstyled">
+                     <li>
+                        <span>JAVA</span>
+                        <div class="progress">
+                           <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                     </li>
+                     <li>
+                        <span>SpringBoot</span>
+                        <div class="progress">
+                           <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                     </li>
+                     <li>
+                        <span>Databases</span>
+                        <div class="progress">
+                           <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                     </li>
+                     <li>
+                        <span>Micronaut</span>
+                        <div class="progress">
+                           <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                     </li>
+                     <li>
+                        <span>Hibernate</span>
+                        <div class="progress">
+                           <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                     </li>
+                     <li>
+                        <span>Docker</span>
+                        <div class="progress">
+                           <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                     </li>
+                     <li>
+                        <span>Junit</span>
+                        <div class="progress">
+                           <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                     </li>
+                     <li>
+                        <span>Angular</span>
+                        <div class="progress">
+                           <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="container">
+               </div>
+            </div>
+            <div class="col-md-8">
+               <h5 class="text-center font-weight-bold lang" lang="en">Experiência Profissional</h5>
+               <div class="timeline">
+                  <div class="timeline-item custom-card lang" lang="en">
+                     <div class="timeline-date">
+                        <span>2023</span>
+                     </div>
+                     <div class="timeline-content">
+                        <h3>Petrotec - Currently</h3>
+                        <h6 class="custom-position">Senior Developer</h6>
+                        <p><b>FleetSys VII - DIT</b>. Applications focused on fleet usage where Fleetsys VII ensures correct, precise, and efficient fuel management, allowing for the automation and control of a small service station to a network of stations, using microservices and agile methodologies such as: kanban, scrum, confluence, and jira. The primary language used is Java with Micronaut and some frameworks: Hibernate, Jenkins, Angular, Maven, JUnit, Docker, Swagger, and Git.<br />
+                           <b>PCS Manager – Backoffice:</b> WEB application for managing and configuring Fleetsys, Pulse POS, POS Manager. Using microservices and agile methodologies such as: kanban, scrum, confluence, and jira. The primary language used is Java with MariaDB databases and frameworks: Micronaut, Hibernate, Jenkins, Angular, Maven, Git, and Swagger.<br />
+                           <b>POS Manager – Backoffice:</b> WEB application for managing and configuring Pulse POS – Point of Sale. Using microservices and agile methodologies such as: kanban, scrum, confluence, and jira. The primary language used is Java with MariaDB databases and frameworks: Micronaut, Hibernate, Jenkins, Angular, Maven, Git, and Swagger.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="pt">
+                     <div class="timeline-date">
+                        <span>2023</span>
+                     </div>
+                     <div class="timeline-content">
+                        <h3>Petrotec - Atualmente</h3>
+                        <h6 class="custom-position">Desenvolvedor Senior</h6>
+                        <p><b>FleetSys VII - DIT</b>. Aplicações voltadas para uso de frotas onde o Fleetsys VII faz uma correta, precisa, e eficaz gestão dos combustíveis, permitindo a automatização e controlo de uma pequena estação de serviço, até uma rede de estações, utilizando microserviços e metodologias ágeis como: kanban,scrum, conflunce e jira. A principal linguagem utilizada é o java com micronaut e alguns frameworks: hibernate, jenkins, angular, maven, junit, docker,swagger e git.<br />
+                           <b>PCS Manager – Backoffice:</b> Aplicação WEB para controle de gestão e configuração do Fleetsys, Pulse POS, POS Manager. Utilizando microserviços e metodologias ágeis como: kanban,scrum,conflunce e jira. A principal linguagem utilizada é o java com base dados mariadb e frameworks: micronaut, hibernate, jenkins, angular, maven, git e swagger.<br />
+                           <b>POS Manager – Backoffice:</b> Aplicação WEB para controle de gestão e configuração do Pulse POS – Point of Sale . Utilizando microserviços e metodologias ágeis como: kanban,scrum,conflunce e jira. A principal linguagem utilizada é o java com base dados mariadb e frameworks: micronaut, hibernate, jenkins, angular, maven, git e swagger.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="en">
+                     <div class="timeline-date">
+                        <span>2020</span>
+                     </div>
+                     <div class="timeline-content lang">
+                        <h3>Alter Solutions Portugal</h3>
+                        <h6 class="custom-position">Senior Developer</h6>
+                        <p><b>Santander:</b> Backend developer for banking applications using Spring Boot to create microservices.<br/>
+                           Using microservices and agile methodologies such as: kanban, scrum, confluence, and jira. The primary language used is Java with Oracle and NoSQL databases and frameworks: Spring Boot, Hibernate, Go, Angular, Maven, Git, and Swagger.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="pt">
+                     <div class="timeline-date">
+                        <span>2020</span>
+                     </div>
+                     <div class="timeline-content lang">
+                        <h3>Alter Solutions Portugal</h3>
+                        <h6 class="custom-position">Desenvolvedor Senior</h6>
+                        <p><b>Santander:</b>  Desenvolvedor backend para aplicações voltadas para area da banca usando springboot para criar microserviços.<br/>
+                           Utilizando microserviços e metodologias ágeis como: kanban,scrum,conflunce e jira.  A principal linguagem utilizada é o java com base dados oracle e nosql e frameworks: springboot, hibernate, go, angular, maven, git e swagger.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="en">
+                     <div class="timeline-date">
+                        <span>2020</span>
+                     </div>
+                     <div class="timeline-content">
+                        <h3>Altran</h3>
+                        <h6 class="custom-position">Senior Developer</h6>
+                        <p><b>Infarmed:</b> Developer and technical leader of the CITS project. Applications focused on medical use where files containing medication information are made available through web service and files for download on the portal using agile methodologies such as: kanban and scrum. The primary language used is Java with PL/SQL Oracle and frameworks: Hibernate, Jenkins, JSF, Maven, JUnit, Ant, JBoss, and SVN.<br/>
+                           <b>II – Instituto de informática:</b> Developer and technical leader of the ASCD project team. WEB application for requesting Social Security Contributory Situation Declaration. The primary language used is Java with Oracle databases and frameworks: Hibernate, Jenkins, JSF, Maven, Glassfish, SVN.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="pt">
+                     <div class="timeline-date">
+                        <span>2020</span>
+                     </div>
+                     <div class="timeline-content">
+                        <h3>Altran</h3>
+                        <h6 class="custom-position">Desenvolvedor Senior</h6>
+                        <p><b>Infarmed:</b>  Desenvolvedor e líder técnico do projeto CITS. aplicações voltadas para uso médico onde é disponibilizada arquivos que contém informações de medicamentos através de webservice e arquivos para download no portal utilizando metodologias ágeis como: kanban e scrum. A principal linguagem utilizada é o java com PL/SQL Oracle e frameworks: hibernate, jenkins, jsf, maven, Junit, ant, jboss e svn.<br/>
+                           <b>II – Instituto de informática:</b>  Desenvolvedor e líder técnico da equipa do projeto ASCD. Aplicação WEB para solicitação de Declaração Situação Contributiva da segurança social. A principal linguagem utilizada é o java com base dados Oracle e frameworks: hibernate, jenkins, jsf, maven, Glassfish, Svn.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="en">
+                     <div class="timeline-date">
+                        <span>2018</span>
+                     </div>
+                     <div class="timeline-content">
+                        <h3>MV Sistemas</h3>
+                        <h6 class="custom-position">Software Engineer</h6>
+                        <p>Development of applications aimed at medical and hospital use, in the <b>MGES</b> project - Inventory Management System, using agile methodologies such as: kanban and scrum. The primary language used is Java with PL/SQL Oracle and proprietary frameworks.</p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="pt">
+                     <div class="timeline-date">
+                        <span>2018</span>
+                     </div>
+                     <div class="timeline-content">
+                        <h3>MV Sistemas</h3>
+                        <h6 class="custom-position">Engenheiro de Software</h6>
+                        <p>Desenvolvimento de aplicações voltadas para uso médico e hospitalar, no projeto <b>MGES</b> - Sistema de Gerenciamento de Estoque, utilizando metodologias ágeis como: kanban e scrum. A principal linguagem utilizada é o java com PL/SQL Oracle e frameworks próprios.</p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="en">
+                     <div class="timeline-date">
+                        <span>2014</span>
+                     </div>
+                     <div class="timeline-content">
+                        <h3>Accenture</h3>
+                        <h6 class="custom-position">Senior Developer</h6>
+                        <p>Participated in project analysis, describing use cases and documentation, outlining project scopes, and developing web solutions with Java technology, well-established frameworks in the market, and frameworks specific to clients.</p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="pt">
+                     <div class="timeline-date">
+                        <span>2014</span>
+                     </div>
+                     <div class="timeline-content">
+                        <h3>Accenture</h3>
+                        <h6 class="custom-position">Desenvolvedor Pleno</h6>
+                        <p>Participava de análise de projetos, descrevendo casos de usos e documentação, levantando escopo de projetos e desenvolvendo soluções web com a tecnologia java, frameworks consagrados no mercado e frameworks dos próprios clientes.</p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="en">
+                     <div class="timeline-date">
+                        <span>2013</span>
+                     </div>
+                     <div class="timeline-content custom-card">
+                        <h3>OFM System</h3>
+                        <h6 class="custom-position">Junior Developer</h6>
+                        <p>Using various technologies, including continuous integration using Jenkins, Maven, Jira, and Subversion. Also worked with various frameworks such as Hibernate, Spring, JPA, Cairngorm, JasperReports, among others, well-established in the market.</p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="pt">
+                     <div class="timeline-date">
+                        <span>2013</span>
+                     </div>
+                     <div class="timeline-content custom-card">
+                        <h3>OFM Sistema</h3>
+                        <h6 class="custom-position">Desenvolvedor Junior</h6>
+                        <p>Utilizando diversas tecnologias, entre elas a integração contínua usando Jenkins, Maven, Jira e Subversion. Além de trabalhar com diversos frameworks como Hibernate, Spring, Jpa, Cairngorm, JasperReports entre outros consagrados no mercado.</p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="en">
+                     <div class="timeline-date">
+                        <span>2010</span>
+                     </div>
+                     <div class="timeline-content">
+                        <h3>Bccom Communication</h3>
+                        <h6 class="custom-position">Intern</h6>
+                        <p>Worked with web development, using the PHP programming language and MySQL database.</p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="pt">
+                     <div class="timeline-date">
+                        <span>2010</span>
+                     </div>
+                     <div class="timeline-content">
+                        <h3>Bccom Comunicação</h3>
+                        <h6 class="custom-position">Estagiário</h6>
+                        <p>Atuava com desenvolvimento web, utilizando a linguagem de programação PHP e banco de dados mysql.</p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="en">
+                     <div class="timeline-content">
+                        <h3>Cinematica Web - Projects (Freelancer)</h3>
+                        <p>Development of a system to optimize the internal process of the physiotherapy clinic with scheduling, patient registration, evaluation, cash flow, among others. Working with languages and frameworks: Java, JSF, Primefaces, JPA, Hibernate, Spring, Spring Security, HTML, CSS, JavaScript, Maven, PostgreSQL Database, REST.</p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="pt">
+                     <div class="timeline-content">
+                        <h3>Cinemática Web - Projetos (Freelancer)</h3>
+                        <p>Desenvolvimento do sistema para otimizar o processo interno da clínica de fisioterapia com agendas,cadastro de pacientes,avaliação, fluxo de caixa, entre outros. Atuando com linguagens e frameworks: Java, JSF,
+                           Primefaces, JPA, Hibernate, Spring, Spring Security, Html, CSS, JavaScript, Maven, Banco de Dados PostgreSql, REST.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="en">
+                     <div class="timeline-content">
+                        <h3>Cinematica Mobile - Projects (Freelancer)</h3>
+                        <p>Development of hybrid mobile systems to optimize the online appointment scheduling process. Working with languages and frameworks: Ionic, Angular, TypeScript, Spring Boot, Spring Security, PostgreSQL. - Under Development</p>
+                     </div>
+                  </div>
+                  <div class="timeline-item custom-card lang" lang="pt">
+                     <div class="timeline-content">
+                        <h3>Cinemática Mobile - Projetos (Freelancer)</h3>
+                        <p>Desenvolvimento de sistemas mobile híbridos, para otimizar o processo de agendamento de consultas online. Atuando com linguagens e frameworks: Ionic, Angular,TypeScript,Spring Boot,Spring Security, PostgreSQL. - em Desenvolvimento</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="education lang" lang="en">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h5 class="card-title lang" lang="en">Higher Education</h5>
+                     </div>
+                     <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted lang" lang="en">Computer Science</h6>
+                        <p class="card-text lang" lang="en">FAA/IESA - Institute of Higher Education of Alagoas</p>
+                        <p class="card-text lang" lang="en">Completed in 2012</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="education lang" lang="pt">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h5 class="card-title lang" lang="pt">Curso Superior</h5>
+                     </div>
+                     <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted lang" lang="pt">Ciências da Computação</h6>
+                        <p class="card-text lang" lang="pt">FAA/IESA - Instituto de Ensino Superior de Alagoas</p>
+                        <p class="card-text lang" lang="pt">Concluído em 2012</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="qualifications lang" lang="en">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h5 class="card-title">Professional Summary</h5>
+                     </div>
+                     <div class="card-body">
+                        <p class="card-text">Dedicated professional in the area of software analysis and development, with over a decade of experience, specialized in Java and related technologies, seeking opportunities to apply my skills and knowledge in challenging projects.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="qualifications lang" lang="pt">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h5 class="card-title">Resumo Profissional</h5>
+                     </div>
+                     <div class="card-body">
+                        <p class="card-text">Profissional dedicado na área de análise e desenvolvimento de software, com mais de uma década de experiência, especializado em Java e tecnologias correlatas, buscando oportunidades para aplicar minhas habilidades e conhecimentos em projetos desafiadores.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="certifications lang" lang="en">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h5 class="card-title">Certifications</h5>
+                     </div>
+                     <div class="card-body">
+                        <p class="card-text">Java and Object Orientation FJ11 – Caelum</p>
+                        <p class="card-text">Beginner's English - SENAC</p>
+                        <p class="card-text">HTML, Macromedia Dreamweaver, Corel Draw, Adobe Photoshop, Macromedia Flash, Macromedia Fireworks - Microlins</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="certifications lang" lang="pt">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h5 class="card-title">Certificações</h5>
+                     </div>
+                     <div class="card-body">
+                        <p class="card-text">Java e Orientação a Objeto FJ11 – Caelum</p>
+                        <p class="card-text">Begin’s english - SENAC </p>
+                        <p class="card-text">HTML, Macromedia Dreamweaver, Corel Draw, Adobe Photoshop, Macromedia Flash, Macromedia Fireworks - Microlins</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="language-skills border-0 lang" lang="en">
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h5 class="card-title lang" lang="en">Languages</h5>
+                     </div>
+                     <div class="card-body">
+                        <div class="progress mb-3">
+                           <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><b class="text-dark">Portuguese</b></div>
+                        </div>
+                        <div class="progress mb-3">
+                           <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 70%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><b class="text-dark">English</b></div>
+                        </div>
+                        <div class="progress">
+                           <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 60%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><b class="text-dark">Spanish</b></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="language-skills border-0 lang" lang=""pt>
+                  <div class="card border-0">
+                     <div class="card-header">
+                        <h5 class="card-title">Idiomas</h5>
+                     </div>
+                     <div class="card-body">
+                        <div class="progress mb-3">
+                           <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><b class="text-dark">Português</b></div>
+                        </div>
+                        <div class="progress mb-3">
+                           <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 70%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><b class="text-dark">Inglês</b></div>
+                        </div>
+                        <div class="progress">
+                           <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 60%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><b class="text-dark">Espanhol</b></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/js/bootstrap.bundle.min.js"></script>
+	  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Carrega a página com o idioma padrão definido no HTML
+            const defaultLanguage = document.documentElement.lang;
+            changeLanguage(defaultLanguage);
+        });
+	  </script>
+      <script>
+         function changeLanguage(lang) {
+             const timelineContents = document.querySelectorAll('.timeline-item, .certifications, .qualifications, .language-skills, .language-label');
+         
+             timelineContents.forEach(content => {
+                 if (content.lang === lang) {
+                     content.style.display = 'block';
+                 } else {
+                     content.style.display = 'none';
+                 }
+             });
+         }
+      </script>
+   </body>
+</html>

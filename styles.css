@@ -1,0 +1,183 @@
+/* Estilos CSS completos */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, #f7b733, #fc4a1a);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 960px;
+    padding: 3rem;
+    background-color: #fff;
+}
+
+#language-selector {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: right; /* Alinha os ícones à direita */
+}
+
+#language-toggle {
+    margin-left: 10px; /* Adiciona um espaçamento à esquerda do ícone */
+}
+
+#language-toggle img {
+    width: 24px; /* Define a largura da imagem */
+    height: 24px; /* Define a altura da imagem */
+}
+
+#language-selector select {
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#language-selector label {
+    margin-right: 10px;
+}
+
+.skills {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.experiences {
+    width: 100%;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #000;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 40px;
+}
+
+.timeline-date {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+}
+
+.timeline-date span {
+    display: block;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.custom-card::before {
+    display: none;
+}
+
+.custom-position {
+    color: #888888;
+    font-size: 14px;
+}
+
+.education .card,
+.qualifications .card,
+.certifications .card,
+.language-skills .card {
+    border: none;
+    background-color: transparent;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-subtitle {
+    font-size: 18px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    font-size: 14px;
+}
+
+.progress-bar b {
+    font-weight: bold;
+}
