@@ -10,7 +10,7 @@
    <body>
       <main class="container">
          <div id="language-selector">
-	    <span class="language-label lang" lang="pt">Idiomas:</span> <span class="language-label lang" lang="en">Languages:</span> <a href="#" id="language-toggle" onclick="changeLanguage('pt')">
+            <span class="language-label lang" lang="pt">Idiomas:</span> <span class="language-label lang" lang="en">Languages:</span> <a href="#" id="language-toggle" onclick="changeLanguage('pt')">
             <img src="bandeira-do-brasil.png" alt="Português" class="icon">
             </a>
             <a href="#" id="language-toggle" onclick="changeLanguage('en')">
@@ -111,8 +111,6 @@
                </div>
                <div class="container">
                </div>
-            </div>
-            <div class="container">
             </div>
             <div class="col-md-8">
                <h5 class="text-center font-weight-bold lang" lang="en">Experiência Profissional</h5>
@@ -426,24 +424,5 @@
              });
          }
       </script>
-     <!-- JavaScript -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
-   <script>
-      function generatePDF() {
-         const doc = new jsPDF();
-
-         doc.setFontSize(22);
-         doc.text("Currículo", 105, 10, null, null, "center");
-
-         // HTML element to PDF
-         doc.html(document.querySelector('.container'), {
-            callback: function (pdf) {
-               pdf.save('meu-curriculo.pdf');
-            },
-            x: 10,
-            y: 10
-         });
-      }
-   </script>
    </body>
 </html>
